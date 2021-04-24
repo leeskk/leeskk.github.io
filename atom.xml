@@ -3,11 +3,11 @@
   <title>Leesk&#39;s Blog</title>
   
   
-  <link href="https://github.com/leeskk/leeskk.github.io/atom.xml" rel="self"/>
+  <link href="https://www.leessk.cn/atom.xml" rel="self"/>
   
-  <link href="https://github.com/leeskk/leeskk.github.io/"/>
+  <link href="https://www.leessk.cn/"/>
   <updated>2021-04-24T06:00:18.930Z</updated>
-  <id>https://github.com/leeskk/leeskk.github.io/</id>
+  <id>https://www.leessk.cn/</id>
   
   <author>
     <name>Leesk</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>concurrency</title>
-    <link href="https://github.com/leeskk/leeskk.github.io/2021/04/24/concurrency/"/>
-    <id>https://github.com/leeskk/leeskk.github.io/2021/04/24/concurrency/</id>
+    <link href="https://www.leessk.cn/2021/04/24/concurrency/"/>
+    <id>https://www.leessk.cn/2021/04/24/concurrency/</id>
     <published>2021-04-24T05:58:46.000Z</published>
     <updated>2021-04-24T06:00:18.930Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>article title</title>
-    <link href="https://github.com/leeskk/leeskk.github.io/2021/04/24/article-title/"/>
-    <id>https://github.com/leeskk/leeskk.github.io/2021/04/24/article-title/</id>
+    <link href="https://www.leessk.cn/2021/04/24/article-title/"/>
+    <id>https://www.leessk.cn/2021/04/24/article-title/</id>
     <published>2021-04-24T02:53:57.000Z</published>
     <updated>2021-04-24T02:53:57.804Z</updated>
     
@@ -52,8 +52,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://github.com/leeskk/leeskk.github.io/2021/04/24/hello-world/"/>
-    <id>https://github.com/leeskk/leeskk.github.io/2021/04/24/hello-world/</id>
+    <link href="https://www.leessk.cn/2021/04/24/hello-world/"/>
+    <id>https://www.leessk.cn/2021/04/24/hello-world/</id>
     <published>2021-04-24T02:37:31.552Z</published>
     <updated>2021-04-24T02:37:31.552Z</updated>
     
