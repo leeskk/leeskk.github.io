@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="深入学习 HashMap, Leesk&#39;s Blog">
+    <meta name="keywords" content="深入学习Hashmap, Leesk&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>深入学习 HashMap | Leesk&#39;s Blog</title>
+    <title>深入学习Hashmap | Leesk&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">深入学习 HashMap</h1>
+                    <h1 class="description center-align post-title">深入学习Hashmap</h1>
                 </div>
             </div>
         </div>
@@ -474,14 +474,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="深入学习-HashMap"><a href="#深入学习-HashMap" class="headerlink" title="深入学习 HashMap"></a>深入学习 HashMap</h1><p>HashMap 是一个用来存放键值对（K-V）的容器，在实际开发中经常使用到，它在 Java 中的继承关系如下：</p>
-<img src="E:\study\blogs\source\_posts\深入学习HashMap\HashMap.png" alt="HashMap">
+                <h1 id="Java-中的-HashMap"><a href="#Java-中的-HashMap" class="headerlink" title="Java 中的 HashMap"></a>Java 中的 HashMap</h1><p>HashMap 是一个用来存放键值对（K-V）的容器，在实际开发中经常使用到，它在 Java 中的继承关系如下：</p>
+<img src="/2021/04/26/shen-ru-xue-xi-hashmap/HashMap.png" class="" title="HashMap">
 
 <h2 id="一、底层数据结构"><a href="#一、底层数据结构" class="headerlink" title="一、底层数据结构"></a>一、底层数据结构</h2><p>要了解一个容器的底层是如何存放数据的，首先要了解它的数据结构的形式。</p>
 <p>在 Java7 中，HashMap 的结构为数组（+ 链表）。</p>
 <p>而在 Java8 中，HashMap 的结构变为数组（ + 链表 （+ 红黑树）），我们知道 JDK8 在性能方面做了很多优化，HashMap 底层结构的不同也是其中的一点。</p>
 <p>下图仅是对该数据结构做一个形象的描述，没有非常符合规范。</p>
-<img src="E:\MyLearning\study_notes\数据结构与算法\pictures\笔记\数据结构\HashMap底层结构.png" alt="HashMap底层结构" style="zoom: 50%;">
+<img src="/2021/04/26/shen-ru-xue-xi-hashmap/HashMap%E5%BA%95%E5%B1%82%E7%BB%93%E6%9E%84.png" class="" title="HashMap底层结构">
 
 <p>对于结构的描述加了括号的原因是括号内的数据结构都不是在初始时就有的，而是在一定的条件下，在括号外数据结构的基础上转变而来的，其目的都是为了提高检索的效率。</p>
 <p>因此两个版本的 HashMap 都兼有数组的快速索引和链表的动态扩容的优点，这也是哈希表检索速度超级快的原因。而 Java8 经优化得到的红黑树的具体作用，后面再讲述。</p>
@@ -818,7 +818,7 @@
 </li>
 </ol>
 <p>图示模拟：</p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210426154814740.png" alt="image-20210426154814740" style="zoom:67%;">
+<img src="/2021/04/26/shen-ru-xue-xi-hashmap/image-20210426154814740.png" class="" title="image-20210426154814740">
 
 <p>具体实现及分析：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//	以下代码来自（java8）java.util.HashMap</span>
@@ -896,8 +896,7 @@
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>根据源代码和注释，再结合此图进一步加深理解吧</p>
-<img src="E:\MyLearning\study_notes\数据结构与算法\pictures\笔记\数据结构\put 流程图.jpg" alt="put 流程图">
-
+<p>![put 流程图](深入学习Hashmap/put 流程图.jpg)</p>
 <p>注意，这里替换发生了两次，一次是桶位上的元素发生重复，还有一次是链表上的元素发生重复。</p>
 <h3 id="5、扩容操作"><a href="#5、扩容操作" class="headerlink" title="5、扩容操作"></a>5、扩容操作</h3><p>HashMap 的扩容操作不仅是增大数组的大小，在增大大小后，还要进行 rehash，即将所有的元素重新放入其该有的位置，这个过程是很耗费时间的，那我们扩容操作存在的目的是什么 <span class="github-emoji"><span>❓</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2753.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
 <p>我们知道在发生哈希碰撞时 Java 采取的解决哈希碰撞的策略是在该桶位上进行链化，而我们知道链表相较于数组的不足之处就在于它的索引能力极差，只能一个一个地检索，所以一旦某桶位的碰撞频繁发生，那么这会严重影响查询的效率，这和 HashMap 的设计理念不相符，所以就有了扩容操作（另外 Java8 还引入了红黑树来解决这个问题，这里暂不涉及）。</p>
@@ -1017,7 +1016,7 @@
 
 <p>在 rehash 中已链化的桶位的具体操作比较复杂，下面来具体分析一波：</p>
 <p>扩容后原 HashMap 结构中的数据通过 indexFor() 方法计算出其新的位置进行存放，JDK 将新的位置分为低位链表和高位链表，如图，蓝色箭头指向的便是低位链表，绿色箭头指向的便是高位链表。</p>
-<img src="E:\MyLearning\study_notes\数据结构与算法\pictures\笔记\数据结构\HashMap扩容.png" alt="HashMap扩容" style="zoom:50%;">
+<img src="/2021/04/26/shen-ru-xue-xi-hashmap/HashMap%E6%89%A9%E5%AE%B9.png" class="" title="HashMap扩容">
 
 <p>举个例子，如果扩容一倍，由于扩容前放在数组中位置 15 的数据的 hash 值可能是 <code>.... 0 1111</code>，也可能是 <code> .... 1 1111</code>，进行寻址计算后的结果如果是 15 ，那么就放在低位，如果是 31 ，那么就放在高位。 </p>
 <p>也就是说，数据具体在扩容后的结构中放在低位还是高位，需要<strong>看原来数据的 hash 值计算后的结果</strong>。</p>
@@ -1288,18 +1287,54 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/04/27/hashmap/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Hashmap">
+                        
+                        <span class="card-title">Hashmap</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-27
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Leesk
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
                 <a href="/2021/04/26/shen-ru-xue-xi-hashmap/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="深入学习 HashMap">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="深入学习Hashmap">
                         
-                        <span class="card-title">深入学习 HashMap</span>
+                        <span class="card-title">深入学习Hashmap</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1328,43 +1363,6 @@
                         <span class="chip bg-color">Java</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/04/24/concurrency/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="concurrency">
-                        
-                        <span class="card-title">concurrency</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-24
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Leesk
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
