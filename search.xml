@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>Hashmap</title>
-      <link href="2021/04/27/hashmap/"/>
-      <url>2021/04/27/hashmap/</url>
-      
-        <content type="html"><![CDATA[<p>HashMap 是一个用来存放键值对（K-V）的容器，在实际开发中经常使用到，它在 Java 中的继承关系如下：</p><img src="/2021/04/27/hashmap/HashMap.png" class="" title="HashMap">]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>深入学习Hashmap</title>
       <link href="2021/04/26/shen-ru-xue-xi-hashmap/"/>
       <url>2021/04/26/shen-ru-xue-xi-hashmap/</url>
